@@ -1,0 +1,152 @@
+* html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face  {
+    font-family: 'EB Garamond';
+    src: url('EBGaramond-Regular.eot');
+    src: url('EBGaramond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('EBGaramond-Regular.woff2') format('woff2'),
+        url('EBGaramond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.nav-link:hover {
+    color: rgb(31, 97, 212);
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    height: 1000px;
+    background: linear-gradient(
+        rgb(251, 244, 204), rgb(239, 199, 35)
+    );
+    background-size: cover;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+  h1 {
+        font-size: calc(24px+(16+16*0.7)*((100vw-320px) /1280))
+    }
+}
+
+div {
+    padding: 10px;
+    margin: auto;
+   }
+   @media screen and (min-device-width: 1600px) {
+    div, h1 {width: 1500px;}
+   }
+   @media screen and (device-width: 1280px) {
+    div, h1 {width: 1100px;}
+   }
+   @media screen and (device-width: 1024px) {
+    div, h1 {width: 980px;}
+   }
+
+@media handheld and (grid) and (max-width: 15em) {
+    body { font-size: 2em; }
+}
+
+
+h1 {
+    display: block;
+    font-family: EB Garamond;
+    font-size:calc(24px+16*(100vw/1280));
+    color: rgb(90, 84, 84);
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    left: 20px;
+    right: 20px;
+}
+
+#second {
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 200px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    row-gap: 20px;
+    box-sizing: border-box;
+}
+
+.col align-self-start {
+    font-size: large;
+}
+
+.carousel-item {
+    height: 300px;
+    width: 500px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: rgb(247, 225, 77); 
+    min-width: 100%;
+    background-size: cover;
+    height: 258px;
+}
+
+.footer a {
+    color: rgb(51, 60, 51);
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.footer h3 {
+    color: rgb(51, 60, 51);
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(250, 249, 249);
+    padding-bottom: 3px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.nav-icon a, .nav-itemdropdown a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
